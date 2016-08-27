@@ -1,0 +1,10 @@
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\bin\Debug\Raman.exe.config
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\bin\Debug\Raman.exe
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\bin\Debug\Raman.pdb
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.Form1.resources
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.frmTerminal.resources
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.Properties.Resources.resources
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Spectrometer.csproj.GenerateResource.Cache
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.exe
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.pdb
+T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Spectrometer.csprojResolveAssemblyReference.cache
