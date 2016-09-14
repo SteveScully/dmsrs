@@ -12,11 +12,15 @@ namespace Raman
 {
     public partial class Form1 : Form
     {
+        ClassFileIO FileIO;
+        RegExWrapper Re;
 
         public frmTerminal _FrmTerminal_ = new frmTerminal();
         public Form1()
         {
             InitializeComponent();
+            FileIO = new ClassFileIO();
+            Re = new RegExWrapper();
         }
 
         private void Form1_Load(object sender, EventArgs e)
@@ -33,10 +37,15 @@ namespace Raman
 
         private void btnRead_Click(object sender, EventArgs e)
         {
-            string rdStr;
+            string rdStr, parseStr;
+            btnRead.Enabled = false;
+            
             _FrmTerminal_.readReg("r", out rdStr);
+            parseStr = Re.RepRegex("\t", rdStr, ",");
+            parseStr = Re.RepRegex("\r\r", parseStr, "\r");
+            FileIO.WriteAll(parseStr, "raw_"+ DateTime.Now.Ticks +".csv");
             fillChart(rdStr);
-
+            btnRead.Enabled = true;
         }
 
         private void fillChart(string DataV)
@@ -45,7 +54,9 @@ namespace Raman
             string[] strArray = DataV.Split('\n');
             string strLine;
             string[] strXY;
-
+            Int16  X;
+            double Min, Max, Y;
+            Min = 99; Max = 0;
             if(strArray.Length < 3647)
             {
                 return;
@@ -56,7 +67,7 @@ namespace Raman
             chart1.Series.Add("CCD");
             chart1.Series["CCD"].ChartType = System.Windows.Forms.DataVisualization.Charting.SeriesChartType.FastLine;
 
-            for(int i = 0; i< 3648; i++)
+            for(int i = 2; i< 3648; i++) // first 2 samp are 0
             {
                 strLine = strArray[i];
                 strXY = strLine.Split('\t');
@@ -66,9 +77,15 @@ namespace Raman
                     continue;
                 }
                 //check bounds i = xval
-                chart1.Series["CCD"].Points.AddXY(Convert.ToInt16(strXY[0]), Convert.ToDouble( strXY[1]));
+                X = Convert.ToInt16(strXY[0]);
+                Y = Convert.ToDouble(strXY[1]);
+                chart1.Series["CCD"].Points.AddXY(X, Y);
+                if (Y < Min)
+                    Min = Y;
+                if (Y > Max)
+                    Max = Y;
             }
-
+            //chart1.ChartAreas[0].RecalculateAxesScale();
 
 
 

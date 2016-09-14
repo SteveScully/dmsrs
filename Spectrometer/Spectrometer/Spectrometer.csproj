@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClsWrapRegEx.cs" />
+    <Compile Include="fileio.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

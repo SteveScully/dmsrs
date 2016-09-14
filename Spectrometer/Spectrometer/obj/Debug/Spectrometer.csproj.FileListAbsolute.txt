@@ -8,3 +8,13 @@ T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Spectrometer.csp
 T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.exe
 T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Raman.pdb
 T:\software\c#\Spectrometer\Spectrometer\Spectrometer\obj\Debug\Spectrometer.csprojResolveAssemblyReference.cache
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\bin\Debug\Raman.exe.config
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Raman.exe
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Raman.pdb
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\bin\Debug\Raman.exe
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\bin\Debug\Raman.pdb
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Spectrometer.csprojResolveAssemblyReference.cache
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Raman.Form1.resources
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Raman.frmTerminal.resources
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Raman.Properties.Resources.resources
+D:\ramanSpectrometer-master\dmsrs\Spectrometer\Spectrometer\obj\Debug\Spectrometer.csproj.GenerateResource.Cache
