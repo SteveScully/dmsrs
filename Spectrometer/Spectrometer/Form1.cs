@@ -86,7 +86,8 @@ namespace Raman
                     Max = Y;
             }
             //chart1.ChartAreas[0].RecalculateAxesScale();
-
+            chart1.ChartAreas[0].AxisY.Maximum = Max;
+            chart1.ChartAreas[0].AxisY.Minimum = Min;
 
 
         }
